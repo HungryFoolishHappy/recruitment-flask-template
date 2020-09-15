@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dialogflow-nlp-flask-template"
+version = "0.1.0"
+description = ""
+authors = ["alex <9070523+ASmallPotato@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+dialogflow = "^1.1.0"
+Flask = "^1.1.2"
+google-auth = "^1.21.1"
+SQLAlchemy = "^1.3.19"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
