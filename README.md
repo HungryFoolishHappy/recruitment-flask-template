@@ -49,6 +49,8 @@ Files included in this repo
 Useful commands
 ----
 ```sh
-docker build --tag dialogflow-nlp-experiment . # building the image
-docker run --rm -v `pwd`:/app -p 5000:5000 dialogflow-nlp-experiment # run the container
+# build the image
+docker build --tag dialogflow-nlp-experiment .
+# run the container (this image was running flask in development mode, it will auto-reload upon file change, manually restarting the container is not necessary)
+docker run --rm -v `pwd`:/app -p 5000:5000 dialogflow-nlp-experiment
 ```
