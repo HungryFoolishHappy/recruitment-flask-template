@@ -34,7 +34,7 @@ to request the chat server to send you a message
 and use [SessionsClient](https://googleapis.dev/python/dialogflow/latest/gapic/v2/api.html#dialogflow_v2.SessionsClient) form Dialogflow to resolve the intent
 1. Return `{ "intent": the name of the intent resolved by dialogflow }` as the response of your webhook, we will treat the value in `queryResult.action` as the intent name
 1. Call `/users/[your user id]/simulate-actions/speaks` again but
-with `{ "validate": "image_url" }` as the request body. This time after getting the intent from dialogflow,
+with `{ "should_validate_image_url": true }` as the request body. This time after getting the intent from dialogflow,
  find the requested snack or drink from the database and return it as a JSON object
 
 Files included in this repo
